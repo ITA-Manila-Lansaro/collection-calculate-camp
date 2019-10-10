@@ -28,7 +28,7 @@ describe('get_integer_interval_2', function () {
   it('', function() {
 
     var result = get_integer_interval_2(5, 5);
-    expect(result).toEqual([]);
+    expect(result).toEqual([5]);
   });
 });
 

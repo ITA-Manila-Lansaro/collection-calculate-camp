@@ -2,9 +2,9 @@
 
 function compute_chain_median(collection) {
     collection = collection.split('->').map(a => parseInt(a));
-    let collectionLen = parseInt(collection.length); 
+    let collectionLen = collection.length; 
 
-    return collection.sort((a, b) => parseInt(a) - parseInt(b))
+    return collection.sort((a, b) => a - b)
     .reduce((a,b, c) => { 
         if (collectionLen % 2 == 0){
             let median = collectionLen/2;
