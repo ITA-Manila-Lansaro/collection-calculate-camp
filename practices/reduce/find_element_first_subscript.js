@@ -1,7 +1,9 @@
 'use strict';
 
 function calculate_elements_sum(collection, element) {
-  //write code here
+
+  return collection.reduce((prev, curr) => {
+    if (curr === element) return element;});
 }
 
 module.exports = calculate_elements_sum;

@@ -1,8 +1,9 @@
 'use strict';
 
 function choose_no_repeat_number(collection) {
+  
+  return collection.filter((x, y, z) => z.indexOf(x) === y);
 
-  //write code here
 }
 
 module.exports = choose_no_repeat_number;
